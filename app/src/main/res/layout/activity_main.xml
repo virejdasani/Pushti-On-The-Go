@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/shrinathjiImageView"
+        android:layout_width="match_parent"
+        android:layout_height="403dp"
+        app:srcCompat="@drawable/shrinathji_black_bg"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/yamunashtukTextView"
+            android:layout_width="match_parent"
+            android:layout_height="429dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/yamunashtukButton"
+            android:background="@color/purple_200"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:fontFamily="sans-serif"
+            android:text="Yamunashtuk"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="35dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/haveliButton"
+            android:layout_width="match_parent"
+            android:background="@color/purple_200"
+            android:layout_height="90dp"
+            android:fontFamily="sans-serif"
+            android:text="Haveli"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="35dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/calendarButton"
+            android:layout_width="match_parent"
+            android:background="@color/purple_200"
+            android:layout_height="90dp"
+            android:fontFamily="sans-serif"
+            android:text="Gujrati Calendar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="35dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
