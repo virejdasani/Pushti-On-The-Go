@@ -13,6 +13,7 @@ public class YamunashtukActivity extends AppCompatActivity {
     Button englishButton;
     Button gujratiButton;
     Button hindiButton;
+    Button yamunashtukBackButon;
 
 
     @Override
@@ -23,7 +24,9 @@ public class YamunashtukActivity extends AppCompatActivity {
         englishButton = findViewById(R.id.englishButton);
         gujratiButton = findViewById(R.id.gujratiButton);
         hindiButton = findViewById(R.id.hindiButton);
+        yamunashtukBackButon = findViewById(R.id.yamunashtukBackButton);
 
+// English
         englishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,6 +35,7 @@ public class YamunashtukActivity extends AppCompatActivity {
             }
         });
 
+// Gujrati
         gujratiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,11 +44,20 @@ public class YamunashtukActivity extends AppCompatActivity {
             }
         });
 
+// Hindi
         hindiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent hindiIntent = new Intent(YamunashtukActivity.this, hindiYamunashtukActivity.class);
                 startActivity(hindiIntent);
+            }
+        });
+// Back button
+        yamunashtukBackButon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent backYamunashtukIntent = new Intent(YamunashtukActivity.this, MainActivity.class);
+                startActivity(backYamunashtukIntent);
             }
         });
     }

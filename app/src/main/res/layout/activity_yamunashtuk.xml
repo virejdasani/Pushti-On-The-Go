@@ -14,9 +14,22 @@
 
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+
+        <Button
+            android:id="@+id/yamunashtukBackButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="BACK"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="256dp" />
+            android:layout_height="187dp" />
 
         <Button
             android:id="@+id/englishButton"
